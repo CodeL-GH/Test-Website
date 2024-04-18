@@ -16,6 +16,7 @@
 .t-name h1 {
   font-family: Dancing Script ;
   font-size: xx-large;
+  letter-spacing: 5px;
 }
 
 
@@ -40,6 +41,7 @@
 .nav-link {
   font-family: Orbitron;
   text-decoration: none;
+  letter-spacing: 2px;
 }
 
 /* Social Media Link Styles */
