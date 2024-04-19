@@ -14,7 +14,7 @@
   border-radius: 50%;
 }
 .t-name h1 {
-  font-family: Dancing Script ;
+  font-family: "Dancing Script", cursive;
   font-size: xx-large;
   letter-spacing: 5px;
 }
@@ -39,7 +39,7 @@
   }
 }
 .nav-link {
-  font-family: Orbitron;
+  font-family: Orbitron, monospace;
   text-decoration: none;
   letter-spacing: 2px;
 }
