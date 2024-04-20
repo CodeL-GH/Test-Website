@@ -36,6 +36,7 @@
   justify-content: center;
 }
 .media-links i {
+  font-size: large;
   color: black;
   text-align: center;
   padding: 5px;
