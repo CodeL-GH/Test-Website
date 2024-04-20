@@ -1,76 +1,41 @@
 /* Header Styles */
 .hed {
-  background-image: url("");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.pro-img, .pro-name {
+  padding: 0;
+  margin: 0;
   text-align: center;
 }
-.pro-img img {
-  width: 500px;
-  max-width: 50vw;
-  aspect-ratio: 1/1;
+.pro-card {
+  background-color: black;
+  margin: 0;
+  padding: 2%;
+  border: groove 3px;
+  border-radius: 10%;
+  width: 50vw;
+  aspect-ratio:inherit;
+  display: inline-block;
+}
+
+.p-img {
   border-radius: 50%;
+  aspect-ratio: 1/1;
+  width: 50%;
+  height: 50%;
 }
-.pro-name h1 {
-  font-family: "Dancing Script", cursive;
-  font-size: xx-large;
-  letter-spacing: 5px;
-}
+.p-name {
+    font-family: "Dancing Script", cursive;
+    font-size: xx-large;
+    letter-spacing: 5px;
+    color: white;
+  }
 
 /* Navigation Bar Styles */
-.nav-bar {
-  border: solid;
-  max-width: 75vw;
-  max-height: fit-content;
-  overflow: hidden;
-  position: sticky;
-  top: 0;
-  margin: auto;
-    & * {
-    color: white;
-    }
-  }
-
-.nav-link {
-  font-family: Orbitron, monospace;
-  text-decoration: none;
-  letter-spacing: 2px;
-  text-align: center;
-}
-
-/* Expandable Navigation Menu */
-.nav-pop {
-  margin: 0;
-  padding: 0;
-  border-radius: 10%;
-  max-height: 10vw;
-  max-width: 10vw;
-  display: none;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.3);
-  list-style-type: none;
-  &::-webkit-scrollbar {
-    display: none;
-  }
-}
-
-.nav-pop li {
-  text-align: center;
-  color: white;
-  &:hover {
-    background-color: black;
-  }
-}
 
 /* Social Media Link Styles */
 .media-links {
   display: flex;
   justify-content: center;
 }
-.media-links * {
+.media-links i {
   color: black;
   text-align: center;
   padding: 5px;
@@ -81,13 +46,13 @@
 
 /* General Styles */
 body {
-  margin-top: 25vh;
-  justify-content: center;
-  align-items: center;
+  background-color: white;
 }
-
-/* Media Queries */
-
+/* Media Queries */ 
+@media screen and (max-width: 900px) {
+  body {margin-top:25vh;}
+  .pro-card {width: 75vw;}
+}
 
 
 .fine-print {
