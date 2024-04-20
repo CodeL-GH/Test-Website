@@ -9,7 +9,8 @@
   text-align: center;
 }
 .pro-img img {
-  width: 45vw;
+  width: 500px;
+  max-width: 50vw;
   aspect-ratio: 1/1;
   border-radius: 50%;
 }
