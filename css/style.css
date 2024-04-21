@@ -1,31 +1,37 @@
 /* Header Styles */
-.hed {
+.header {
   padding: 0;
   margin: 0;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: auto;
 }
-/* 'Profile' Card */
-.pro-card {
+
+/* Hero Card */
+.hero-card {
   background-color: rgba(22, 22, 22, 0.95);
   box-shadow: 0 0 15px 10px #000 inset;
   margin: 0;
   padding: 2%;
   border: groove 3px;
   border-radius: 10%;
-  width: 50vw;
+  width: 100%;
   aspect-ratio:inherit;
-  display: inline-block;
+  text-align: center;
+  overflow: hidden;
 }
-/* 'Profile' Image */
-.p-img {
+/* Hero Image */
+.h-img {
   border-radius: 50%;
   aspect-ratio: 1/1;
   width: 50%;
   height: 50%;
-  box-shadow: 0 0 20px 10px #000;
+  box-shadow: 0 0 15px black;
 }
-/* 'Profile' Name */
-.p-name {
+/* Hero Name */
+.h-name {
     font-family: "Dancing Script", cursive;
     font-size: xx-large;
     letter-spacing: 5px;
@@ -33,19 +39,17 @@
     text-shadow: 0 0 5px black, 0 0 5px #ffffff;
   }
 
-/* Navigation Bar Styles */
-
 /* Social Media Link Styles */
 .media-links {
   display: flex;
   justify-content: center;
 }
 .media-links i {
-  font-size: large;
+  font-size: x-large;
   color: black;
   text-align: center;
   padding: 5px;
-  &:hover {
+    &:hover {
     color: red;
     text-shadow: 0 0 2px red, 1px 1px 1px black;
   }
@@ -53,18 +57,23 @@
 
 /* General Styles */
 body {
-  background-color: white;
+  background: radial-gradient(circle, black, white, black) no-repeat center;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-
-/* Media Queries */ 
-@media screen and (max-width: 900px) and (min-height: 600px) {
-  body {margin-top:25vh;}
-  .pro-card {width: 75vw;}
-  .p-img {box-shadow: 0 0 15px black;}
+body, html {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  box-shadow: 0 0 25px black inset;
 }
-
-
-.fine-print {
+.fine-print { /* Disclaimer at bottom */
   max-width: 15vw;
   max-height: 20vw;
   font-size: x-small;
@@ -72,4 +81,9 @@ body {
   position: fixed;
   bottom: 2vh;
   right: 2vw;
+}
+
+/* Media Queries */ 
+@media screen and (max-width: 900px) and (min-height: 600px) {
+  .header {width: 85%;}
 }
