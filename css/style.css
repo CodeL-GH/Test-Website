@@ -1,101 +1,99 @@
+/* Variables */
+:root {
+  --ml-color:black;
+  --ml-select:0px 0px 5px red, 1px 1px 1px black;
+  --accent-shadow:0px 0px 15px black;
+  --bg-vignette:0 0 25px black inset;
+}
+
+
+
 /* Header Styles */
-.hed {
-  background-image: url("");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.pro-img, .pro-name {
-  text-align: center;
-}
-.pro-img img {
-  width: 500px;
-  max-width: 50vw;
-  aspect-ratio: 1/1;
-  border-radius: 50%;
-}
-.pro-name h1 {
-  font-family: "Dancing Script", cursive;
-  font-size: xx-large;
-  letter-spacing: 5px;
-}
-
-/* Navigation Bar Styles */
-.nav-bar {
-  border: solid;
-  max-width: 75vw;
-  max-height: fit-content;
-  overflow: hidden;
-  position: sticky;
-  top: 0;
-  margin: auto;
-    & * {
-    color: white;
-    }
-  }
-
-.nav-link {
-  font-family: Orbitron, monospace;
-  text-decoration: none;
-  letter-spacing: 2px;
-  text-align: center;
-}
-
-/* Expandable Navigation Menu */
-.nav-pop {
-  margin: 0;
+.header {
   padding: 0;
-  border-radius: 10%;
-  max-height: 10vw;
-  max-width: 10vw;
-  display: none;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.3);
-  list-style-type: none;
-  &::-webkit-scrollbar {
-    display: none;
-  }
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: auto;
 }
 
-.nav-pop li {
+/* Hero Card */
+.hero-card {
+  background-color: rgba(22, 22, 22, 0.75);
+  box-shadow: var(--bg-vignette);
+  margin: 0;
+  padding: 2%;
+  border: groove 3px;
+  border-radius: 10%;
+  width: 100%;
+  aspect-ratio:inherit;
   text-align: center;
-  color: white;
-  &:hover {
-    background-color: black;
-  }
+  overflow: hidden;
 }
+/* Hero Image */
+.h-img {
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  width: 50%;
+  height: 50%;
+  box-shadow: var(--accent-shadow);
+}
+/* Hero Name */
+.h-name {
+    font-family: "Dancing Script", cursive;
+    font-size: xx-large;
+    letter-spacing: 5px;
+    color: white;
+    text-shadow: var(--accent-shadow);
+  }
 
 /* Social Media Link Styles */
 .media-links {
   display: flex;
   justify-content: center;
 }
-.media-links * {
+.media-links i {
+  font-size: x-large;
   color: black;
   text-align: center;
   padding: 5px;
-  &:hover {
+    &:hover {
     color: red;
+    text-shadow: var(--ml-select);
   }
 }
 
 /* General Styles */
 body {
-  margin-top: 25vh;
-  justify-content: center;
+  background: radial-gradient(circle, black, white, black) no-repeat center;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-
-/* Media Queries */
-
-
-
-.fine-print {
+body, html {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  box-shadow:var(--bg-vignette)
+}
+.fine-print { /* Disclaimer at bottom */
   max-width: 15vw;
   max-height: 20vw;
   font-size: x-small;
   flex-wrap: wrap;
   position: fixed;
-  bottom: 5px;
-  right: 5px;
+  bottom: 2vh;
+  right: 2vw;
+}
+
+/* Media Queries */ 
+@media screen and (max-width: 900px) and (min-height: 600px) {
+  .header {width: 85%;}
 }
