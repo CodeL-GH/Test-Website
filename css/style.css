@@ -21,8 +21,8 @@
 
 /* Hero Card */
 .hero-card {
-  background-color: rgba(22, 22, 22, 0.95);
-  box-shadow: 0 0 15px 10px #000 inset;
+  background-color: rgba(22, 22, 22, 0.75);
+  box-shadow: var(--bg-vignette);
   margin: 0;
   padding: 2%;
   border: groove 3px;
