@@ -1,3 +1,13 @@
+/* Variables */
+:root {
+  --ml-color:black;
+  --ml-select:0px 0px 5px red, 1px 1px 1px black;
+  --accent-shadow:0px 0px 15px black;
+  --bg-vignette:0 0 25px black inset;
+}
+
+
+
 /* Header Styles */
 .header {
   padding: 0;
@@ -28,7 +38,7 @@
   aspect-ratio: 1/1;
   width: 50%;
   height: 50%;
-  box-shadow: 0 0 15px black;
+  box-shadow: var(--accent-shadow);
 }
 /* Hero Name */
 .h-name {
@@ -36,7 +46,7 @@
     font-size: xx-large;
     letter-spacing: 5px;
     color: white;
-    text-shadow: 0 0 5px black, 0 0 5px #ffffff;
+    text-shadow: var(--accent-shadow);
   }
 
 /* Social Media Link Styles */
@@ -51,7 +61,7 @@
   padding: 5px;
     &:hover {
     color: red;
-    text-shadow: 0 0 2px red, 1px 1px 1px black;
+    text-shadow: var(--ml-select);
   }
 }
 
@@ -71,7 +81,7 @@ body, html {
   width: 100%;
   height: 100%;
   overflow: auto;
-  box-shadow: 0 0 25px black inset;
+  box-shadow:var(--bg-vignette)
 }
 .fine-print { /* Disclaimer at bottom */
   max-width: 15vw;
