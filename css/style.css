@@ -4,6 +4,7 @@
   margin: 0;
   text-align: center;
 }
+/* 'Profile' Card */
 .pro-card {
   background-color: rgba(22, 22, 22, 0.95);
   box-shadow: 0 0 15px 10px #000 inset;
@@ -15,7 +16,7 @@
   aspect-ratio:inherit;
   display: inline-block;
 }
-
+/* 'Profile' Image */
 .p-img {
   border-radius: 50%;
   aspect-ratio: 1/1;
@@ -23,6 +24,7 @@
   height: 50%;
   box-shadow: 0 0 20px 10px #000;
 }
+/* 'Profile' Name */
 .p-name {
     font-family: "Dancing Script", cursive;
     font-size: xx-large;
